@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="org.xdty.preference:color-picker-0.0.4">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/org.xdty.preference/color-picker/0.0.4/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/org.xdty.preference/color-picker/0.0.4/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.xdty.preference/color-picker/0.0.4/53187846fdc6c5cd53480b23fe9d398627a8c2c2/color-picker-0.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/background_dark">
+
+
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+     <!--   <TextView
+            android:id="@+id/lbl_preparationTime"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="WARM UP"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />-->
+        <com.savihealer.webstimer.utils.TextViewTypeFace
+            android:id="@+id/lbl_preparationTime"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="warmup"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            geekui:customTypeface="fonts/gotham_light.ttf" />
+        <com.savihealer.webstimer.utils.TextViewTypeFace
+            android:text="time"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_below="@id/lbl_preparationTime"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            geekui:customTypeface="fonts/gotham_light.ttf"/>
+
+
+        <com.savihealer.webstimer.utils.TextViewTypeFace
+            android:id="@+id/textview_preparationTime"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/timer_value_size"
+            android:textColor="@android:color/white"
+            android:text="00:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            geekui:customTypeface="fonts/gotham_light.ttf"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.savihealer.webstimer.utils.TextViewTypeFace
+            android:id="@+id/lbl_excerciseTime"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="excercise"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            geekui:customTypeface="fonts/gotham_light.ttf"/>
+
+
+        <com.savihealer.webstimer.utils.TextViewTypeFace
+                android:id="@+id/textview_excerciseTime"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/timer_value_size"
+                android:textColor="@android:color/white"
+                android:text="00:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            geekui:customTypeface="fonts/gotham_light.ttf"/>
+
+        <com.savihealer.webstimer.utils.TextViewTypeFace
+            android:id="@+id/lbl_excercise_time"
+            android:text="time"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_below="@id/lbl_excerciseTime"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            geekui:customTypeface="fonts/gotham_light.ttf"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.savihealer.webstimer.utils.TextViewTypeFace
+            android:id="@+id/lbl_breakTime"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="break"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            geekui:customTypeface="fonts/gotham_light.ttf"/>
+
+
+        <com.savihealer.webstimer.utils.TextViewTypeFace
+            android:id="@+id/textview_breakTime"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/timer_value_size"
+            android:textColor="@android:color/white"
+            android:text="00:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            geekui:customTypeface="fonts/gotham_light.ttf"/>
+
+
+        <com.savihealer.webstimer.utils.TextViewTypeFace
+            android:id="@+id/lbl_break_time"
+            android:text="time"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_below="@id/lbl_breakTime"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            geekui:customTypeface="fonts/gotham_light.ttf"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.savihealer.webstimer.utils.TextViewTypeFace
+            android:id="@+id/lbl_rounds"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="rounds"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            geekui:customTypeface="fonts/gotham_light.ttf"/>
+
+
+
+        <com.savihealer.webstimer.utils.TextViewTypeFace
+            android:id="@+id/textview_number_of_rounds"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/timer_value_size"
+            android:textColor="@android:color/white"
+            android:text="01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            geekui:customTypeface="fonts/gotham_light.ttf"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

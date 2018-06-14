@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#10FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+       >
+
+          <TextView
+              android:gravity="center_vertical"
+              android:layout_marginLeft="@dimen/activity_horizontal_margin"
+              android:id="@+id/textview_timepicker_label"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:textSize="14sp" />
+
+
+          <Button
+              android:layout_alignParentRight="true"
+              android:id="@+id/button_dialog_ok"
+              android:text="Ok"
+              android:background="#10FFFFFF"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          <View
+              android:id="@+id/view_line"
+              android:layout_below="@id/textview_timepicker_label"
+              android:layout_width="match_parent"
+              android:layout_height="2dp"
+              android:background="#bdfffc">
+          </View>
+
+          <LinearLayout
+              android:id="@+id/linearlayout_round_picker"
+              android:layout_below="@id/view_line"
+              android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <NumberPicker
+                  android:id="@+id/numberPickerRound"
+                  android:layout_weight="1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"></NumberPicker>
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/linearlayout_timer"
+              android:layout_marginLeft="@dimen/activity_vertical_margin"
+              android:layout_below="@id/view_line"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+            <NumberPicker
+                android:id="@+id/numberPickerMins"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+              <TextView
+                  android:text="Min"
+                  android:textAlignment="center"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent" />
+
+              <NumberPicker
+                  android:id="@+id/numberPickerSecs"
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"/>
+
+              <TextView
+                  android:layout_weight="1"
+                  android:text="Sec"
+                  android:gravity="center"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent" />
+
+          </LinearLayout>
+
+         <LinearLayout
+             android:visibility="gone"
+              android:background="#10FFFFFF"
+              android:layout_below="@id/linearlayout_timer"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_dialog_cancel"
+                android:text="Cancel"
+                android:layout_weight="1"
+                android:background="#10FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+          </LinearLayout>
+      </RelativeLayout>
+<!--
+    </android.support.v7.widget.CardView>-->
+</LinearLayout>

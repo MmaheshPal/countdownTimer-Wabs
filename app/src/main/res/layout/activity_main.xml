@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@android:color/holo_green_light"
+    android:id="@+id/relativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Activity.MainActivity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ToggleButton
+
+        android:id="@+id/togglebutton_playback"
+        android:layout_centerVertical="true"
+        android:textOn=""
+        android:textOff=""
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:minHeight="@dimen/abc_action_bar_default_height_material"
+        android:background="?attr/colorPrimary"/>
+
+    <com.savihealer.webstimer.utils.CustomViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_marginBottom="-50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/relativelayout_quick_access"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#60BDBDBD"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageButton
+            android:id="@+id/imagebutton_volume"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sound_new"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:visibility="gone"
+            android:id="@+id/seekbar_brightness"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <SeekBar
+            android:visibility="gone"
+            android:id="@+id/seekbaar_sound"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/linearlayout_quickaccess"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ToggleButton
+                android:textOff=""
+                android:textOn=""
+                android:id="@+id/togglebutton_vibrate"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="50dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_vibrate_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+
+            <ImageButton
+                android:layout_gravity="center"
+                android:id="@+id/imagebutton_color_picker"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="35dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/color_picker_new"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_alignParentRight="true"
+            android:id="@+id/imagebutton_brightness"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"
+            android:background="@drawable/brightness_new"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+<LinearLayout
+    android:id="@+id/linearlayout"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/progress_bar"
+            android:theme="@style/AlertDialog.AppCompat.Light"
+            android:progressDrawable="@drawable/custom_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+    </RelativeLayout>
+</LinearLayout>
+</RelativeLayout>
+

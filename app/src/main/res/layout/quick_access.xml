@@ -1,0 +1,78 @@
+<RelativeLayout
+    android:id="@+id/relativelayout_quick_access"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignTop="@+id/linearlayout"
+    android:background="#60BDBDBD"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageButton
+        android:id="@+id/imagebutton_volume"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_centerVertical="true"
+        android:background="@drawable/sound_new"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <SeekBar
+        android:visibility="gone"
+        android:id="@+id/seekbar_brightness"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:visibility="gone"
+        android:id="@+id/seekbaar_sound"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/linearlayout_quickaccess"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ToggleButton
+            android:textOff=""
+            android:textOn=""
+            android:id="@+id/togglebutton_vibrate"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_vibrate_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+
+        <ImageButton
+            android:layout_gravity="center"
+            android:id="@+id/imagebutton_color_picker"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/color_picker_new"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_alignParentRight="true"
+        android:id="@+id/imagebutton_brightness"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_centerVertical="true"
+        android:background="@drawable/brightness_new"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+</RelativeLayout>
